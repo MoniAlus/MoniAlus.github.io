@@ -41,16 +41,16 @@ var minutos = Math.floor(intervalo / msporminuto );
 intervalo = intervalo - (minutos * msporminuto );
 //Calcular los segundos y fijar los datos de horas, minutos y segundos en dos dígitos cada uno
 var segundos = Math.floor(intervalo / 1000 );
-  if(horas < 10) { horas = '0' + horas; }
-  if(minutos < 10) { minutos = '0' + minutos; }
-  if(segundos < 10) { segundos = '0' + segundos; }
+if(horas < 10) { horas = '0' + horas; }
+if(minutos < 10) { minutos = '0' + minutos; }
+if(segundos < 10) { segundos = '0' + segundos; }
 //Mostrar el resultado
 var micuarentena = "Tiempo de cuarentena = " + dias + " d " + horas + " h " + minutos + " min " + segundos + " s " + "&lt;br /&gt;Récord Guinness 2020 en curso";	
 return micuarentena; }
 function actualizar() { //Función del temporizador
-   var miestado=cerramiento(); //Recoger cantidad de días de encierro
-   micuarentena=document.getElementById("contenedor"); //Buscar elemento contenedor
-   micuarentena.innerHTML=miestado; } //Incluir datos de encierro
+var miestado=cerramiento(); //Recoger cantidad de días de encierro
+micuarentena=document.getElementById("contenedor"); //Buscar elemento contenedor
+micuarentena.innerHTML=miestado; } //Incluir datos de encierro
 setInterval(actualizar,1000); //Iniciar temporizador
 &lt;/script&gt;
 &lt;div id="contenedor" class="contenedor"&gt;&lt;/div&gt;
