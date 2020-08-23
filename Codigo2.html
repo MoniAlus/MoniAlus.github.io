@@ -7,13 +7,6 @@
 <body>
 <script src="https://MoniAlus.github.io/run_prettify.js?autoload=true&skin=default" defer="defer"></script>
 <pre class="prettyprint" style="white-space:pre-wrap;overflow:auto;">
-&lt;!-- Inicio de código para tiempo de cuarentena -->
-&lt;script type="text/javascript"&gt;
-function cerramiento() {
-//Asignar el valor de las unidades en milisegundos
-var msporminuto = 1000 * 60;
-var msporhora = msporminuto * 60;
-var mspordia = msporhora * 24;
 //Asignar la fecha en milisegundos
 var actual = new Date();//Fecha actual
 var final = new Date(2020,7,31);//Fecha de finalización de la cuarentena (30-8-2020), tomada a las 0 horas del día posterior
@@ -23,37 +16,6 @@ date.setYear(2020);
 date.setMonth(2);//Los meses parten de 0
 date.setDate(20);
 date.setHours(0, 0, 0, 0);//Horas, minutos, segundos y milisegundos
-//Obtener la diferencia en milisegundos
-var intervalo = actual.getTime() - date.getTime();// Da el tiempo transcurrido: avanza el contador
-//var intervalo = final.getTime() - actual.getTime();//Da el tiempo faltante: retrocede el contador
-//Calcular los días y los milisegundos sobrantes
-var dias = Math.floor(intervalo / mspordia );
-intervalo = intervalo - (dias * mspordia );
-//Calcular las horas y los milisegundos sobrantes
-var horas = Math.floor(intervalo / msporhora );
-intervalo = intervalo - (horas * msporhora );
-//Calcular los minutos y los milisegundos sobrantes
-var minutos = Math.floor(intervalo / msporminuto );
-intervalo = intervalo - (minutos * msporminuto );
-//Calcular los segundos y fijar los datos de horas, minutos y segundos en dos dígitos cada uno
-var segundos = Math.floor(intervalo / 1000 );
-if(horas < 10) { horas = '0' + horas; }
-if(minutos < 10) { minutos = '0' + minutos; }
-if(segundos < 10) { segundos = '0' + segundos; }
-//Mostrar el resultado
-var micuarentena = "Tiempo de cuarentena = " + dias + " d " + horas + " h " + minutos + " min " + segundos + " s " + "&lt;br /&gt;Récord Guinness 2020 en curso";	
-return micuarentena; }
-function actualizar() { //Función del temporizador
-var miestado=cerramiento(); //Recoger cantidad de días de encierro
-micuarentena=document.getElementById("contenedor"); //Buscar elemento contenedor
-micuarentena.innerHTML=miestado; } //Incluir datos de encierro
-setInterval(actualizar,1000); //Iniciar temporizador
-&lt;/script&gt;
-&lt;div id="contenedor" class="contenedor"&gt;&lt;/div&gt;
-&lt;style&gt;
-.contenedor{position:relative!important; width:95%; height:auto; margin:10px auto; color:#ffffff; padding:10px 0px 10px 0px; background:#3d84c6; font-size:16px; font-family:Arial; border-radius:10px 0px 10px 0px; text-align: center;}
-&lt;/style&gt;
-&lt;!-- Fin de código para tiempo de cuarentena -->
 </pre>
 </body>
 </html>
