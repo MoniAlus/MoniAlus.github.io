@@ -9,9 +9,6 @@
 <script src="https://MoniAlus.github.io/run_prettify.js?autoload=true&skin=default" defer="defer"></script>
 <pre class="prettyprint linenums" style="white-space:pre-wrap;overflow:auto;">
 &lt;!-- Inicio de código para tiempo de cuarentena -->
-&lt;!-- Fuente: https://jmacuna.tecnoblog.guru/2015/02/resalta-el-codigo-fuente-de-tu-web.html -->
-&lt;!-- Fuente: https://aprende-web.net/jspracticas/tiempo/tiempo1.php -->
-&lt;!-- Fuente: http://rodrigogr.com/blog/calcular-el-tiempo-transcurrido-javascript/ -->
 &lt;script type="text/javascript"&gt;
 function cerramiento() {
 //Asignar el valor de las unidades en milisegundos
@@ -29,7 +26,7 @@ date.setDate(20);
 date.setHours(0, 0, 0, 0);//Horas, minutos, segundos y milisegundos
 //Obtener la diferencia en milisegundos
 var intervalo = actual.getTime() - date.getTime();// Da el tiempo transcurrido: avanza el contador
-//var intervalo = final.getTime() - actual.getTime(); Da el tiempo faltante: retrocede el contador
+//var intervalo = final.getTime() - actual.getTime();//Da el tiempo faltante: retrocede el contador
 //Calcular los días y los milisegundos sobrantes
 var dias = Math.floor(intervalo / mspordia );
 intervalo = intervalo - (dias * mspordia );
