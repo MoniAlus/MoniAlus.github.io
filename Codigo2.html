@@ -7,15 +7,11 @@
 <body>
 <script src="https://MoniAlus.github.io/run_prettify.js?autoload=true&skin=default" defer="defer"></script>
 <pre class="prettyprint" style="border:0;padding:1em;white-space:pre-wrap;overflow-wrap:initial;overflow:auto;">
-//Asignar la fecha en milisegundos
+//Asignar las fechas en milisegundos
 var actual = new Date();//Fecha actual
 var final = new Date(2020,8,21);//Fecha de finalización de la cuarentena (20-9-2020), tomada a las 0 horas del día posterior
 if(final < actual) {actual = final;}
-//Asignar la fecha de inicio de la cuarentena: 20 de marzo de 2020 a la medianoche
-date.setYear(2020);
-date.setMonth(2);//Los meses parten de 0
-date.setDate(20);
-date.setHours(0, 0, 0, 0);//Horas, minutos, segundos y milisegundos
+var inicio = new Date(2020,2,20);//Fecha de inicio de la cuarentena: 20-3-2020 a la medianoche
 </pre>
 </body>
 </html>
