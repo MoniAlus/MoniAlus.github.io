@@ -11,12 +11,11 @@ function cerramiento() {
 var msporminuto = 1000 * 60;
 var msporhora = msporminuto * 60;
 var mspordia = msporhora * 24;
-//Asignar la fecha en milisegundos
+//Asignar las fechas en milisegundos
 var actual = new Date();//Fecha actual
 var final = new Date(2020,8,21);//Fecha de finalización de la cuarentena (20-9-2020), tomada a las 0 horas del día posterior
 if(final < actual) {actual = final;}
-//Asignar la fecha de inicio de la cuarentena: 20 de marzo de 2020 a la medianoche
-var inicio = new Date(2020,2,20)
+var inicio = new Date(2020,2,20);//Fecha de inicio de la cuarentena: 20-3-2020 a la medianoche
 //Obtener la diferencia en milisegundos
 var intervalo = actual.getTime() - inicio.getTime();// Da el tiempo transcurrido: avanza el contador
 //var intervalo = final.getTime() - actual.getTime();//Da el tiempo faltante: retrocede el contador
