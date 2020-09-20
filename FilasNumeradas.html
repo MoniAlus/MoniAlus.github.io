@@ -18,7 +18,7 @@ var mspordia = msporhora * 24;
 //Asignar las fechas en milisegundos
 var inicio = new Date(2020,2,20);//Fecha de inicio de la cuarentena: 20-3-2020 a la medianoche
 var actual = new Date();//Fecha actual
-var final = new Date(2020,8,21);//Fecha de finalización de la cuarentena (20-9-2020), tomada a las 0 horas del día posterior
+var final = new Date(2020,9,12);//Fecha de finalización de la cuarentena (11-10-2020), tomada a las 0 horas del día posterior
 if(final < actual) {actual = final;}
 //Obtener la diferencia en milisegundos
 var intervalo = actual.getTime() - inicio.getTime();//Da el tiempo transcurrido: avanza el contador
