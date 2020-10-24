@@ -18,7 +18,7 @@ var mspordia = msporhora * 24;
 //Asignar las fechas en milisegundos
 var inicio = new Date(2020,2,20);//Fecha de inicio de la cuarentena: 20-3-2020 a la medianoche
 var actual = new Date();//Fecha actual
-var final = new Date(2020,9,26);//Fecha de finalización de la cuarentena (25-10-2020), tomada a las 0 horas del día posterior
+var final = new Date(2020,10,9);//Fecha de finalización de la cuarentena (8-11-2020), tomada a las 0 horas del día posterior
 if(final < actual) {actual = final;}
 //Obtener la diferencia en milisegundos
 var intervalo1 = actual.getTime() - inicio.getTime();// Da el tiempo transcurrido: avanza el contador
@@ -48,8 +48,8 @@ if(horas2 < 10) { horas2 = '0' + horas2; }
 if(minutos2 < 10) { minutos2 = '0' + minutos2; }
 if(segundos2 < 10) { segundos2 = '0' + segundos2; }
 //Mostrar el resultado
-if(final > actual) {var micuarentena = "Tiempo de cuarentena = " + dias1 + " d " + horas1 + " h " + minutos1 + " min " + segundos1 + " s "  + "&lt;br /&gt;Tiempo restante = " + dias2 + " d " + horas2 + " h " + minutos2 + " min " + segundos2 + " s "  + "&lt;br /&gt;Récord Guinness en curso"  + "&lt;br /&gt;>>> 20-3-2020/25-10-2020 <<<";}
-else {var micuarentena = "Tiempo de cuarentena = " + dias1 + " d " + horas1 + " h " + minutos1 + " min " + segundos1 + " s "  + "&lt;br /&gt;¡¡¡Fin de la cuarentena!!!"  + "&lt;br /&gt;Récord Guinness asegurado"  + "&lt;br /&gt;>>> 20-3-2020/25-10-2020 <<<";}	
+if(final > actual) {var micuarentena = "Tiempo de cuarentena = " + dias1 + " d " + horas1 + " h " + minutos1 + " min " + segundos1 + " s "  + "&lt;br /&gt;Tiempo restante = " + dias2 + " d " + horas2 + " h " + minutos2 + " min " + segundos2 + " s "  + "&lt;br /&gt;Récord Guinness en curso"  + "&lt;br /&gt;>>> 20-3-2020 / 8-11-2020 <<<";}
+else {var micuarentena = "Tiempo de cuarentena = " + dias1 + " d " + horas1 + " h " + minutos1 + " min " + segundos1 + " s "  + "&lt;br /&gt;¡¡¡Fin de la cuarentena!!!"  + "&lt;br /&gt;Récord Guinness asegurado"  + "&lt;br /&gt;>>> 20-3-2020 / 8-11-2020 <<<";}	
 return micuarentena; }
 function actualizar() { //Función del temporizador
 var miestado=cerramiento(); //Recoger cantidad de días de encierro
