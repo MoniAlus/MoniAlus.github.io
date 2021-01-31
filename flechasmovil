@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">body,html{margin:0;padding:0}pre.prettyprint{margin:0!important}</style>
+</head>
+<body>
+<style>li.L0, li.L1, li.L2, li.L3, li.L5, li.L6, li.L7, li.L8{list-style-type:decimal!important}</style>
+<script src="https://MoniAlus.github.io/run_prettify.js?autoload=true&skin=default" defer="defer"></script>
+<pre class="prettyprint linenums" style="border:0;padding:1em;white-space:pre-wrap;overflow-wrap:initial;overflow:auto;">
+<p>&nbsp;&lt;!-- Inicio de código para botones arriba y abajo móvil --&gt;</p><p>&lt;a style="position:fixed; bottom:5px; margin-left:50%;left:-150px;" href="#" id="abajo" title="Abajo"&gt;&lt;img src="https://1.bp.blogspot.com/-59F_cDs2BCo/X4IDrpxSTPI/AAAAAAAAHNU/n5x8pDC-0SIqvCepMJ05uW-1i6jvAB65wCLcBGAsYHQ/s0/HueIzqNeg.png" width="50" height="auto"/&gt;&lt;/a&gt;</p><p>&lt;script type="text/javascript"&gt;</p><p>$(document).ready(function() {</p><p>$('#abajo').click(function(){ //Id del elemento cliqueable</p><p>$('html, body').animate({scrollTop:$(document).height()-$(window).height() }, 3000);</p><p>return false;</p><p>});</p><p>});</p><p>&lt;/script&gt;</p><p><br /></p><p>&lt;a style="position:fixed; bottom:5px; margin-right:50%;right:-150px;" href="#" id="arriba" title="Arriba"&gt;&lt;img src="https://1.bp.blogspot.com/-WTTIuahuWLI/X4IDrM5fQII/AAAAAAAAHNI/w8AG4cebSu8ddKfU7NaLrXc2x2f-f5l5gCLcBGAsYHQ/s0/HueDerNeg.png" width="50" height="auto"/&gt;&lt;/a&gt;</p><p>&lt;script type="text/javascript"&gt;</p><p>$(document).ready(function() {</p><p>$('#arriba').click(function(){ //Id del elemento cliqueable</p><p>$('html, body').animate({scrollTop:0}, 3000);</p><p>return false;</p><p>});</p><p>});</p><p>&lt;/script&gt;</p><p>&lt;!-- Fin de código para botones arriba y abajo móvil --&gt;</p>
+</pre>
+</body>
+</html>
